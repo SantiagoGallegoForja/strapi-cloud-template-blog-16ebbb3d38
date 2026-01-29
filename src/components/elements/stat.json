@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_stats",
+  "info": {
+    "displayName": "Stat",
+    "icon": "chartLine",
+    "description": "Statistics item with value and label"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
