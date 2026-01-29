@@ -3,7 +3,7 @@ import logo from './paricus-logo.png';
 
 export default {
   config: {
-    // Custom logo
+    // Paricus Logo everywhere
     auth: {
       logo: logo,
     },
@@ -13,7 +13,7 @@ export default {
     head: {
       favicon: logo,
     },
-    // Paricus brand colors
+    // Disable dark mode - force light theme only
     theme: {
       light: {
         colors: {
@@ -24,9 +24,10 @@ export default {
           primary600: '#3D9E5F',
           primary700: '#2E7D32',
 
-          // Buttons
+          // Buttons - Green
           buttonPrimary500: '#52C17A',
           buttonPrimary600: '#3D9E5F',
+          buttonNeutral0: '#FFFFFF',
 
           // Neutral - Paricus Background
           neutral0: '#FFFFFF',
@@ -34,33 +35,43 @@ export default {
           neutral150: '#F5F5F3',
           neutral200: '#E8E8E6',
           neutral300: '#D5E8D4',
+          neutral400: '#B8CCB6',
+          neutral500: '#8FA88D',
+          neutral600: '#5D6D7E',
+          neutral700: '#4A5568',
+          neutral800: '#2C3E50',
+          neutral900: '#1A202C',
+          neutral1000: '#0D1117',
 
-          // Secondary - Teal accent
+          // Secondary - Teal
           secondary100: '#E0F2F1',
           secondary200: '#B2DFDB',
           secondary500: '#4DB6AC',
           secondary600: '#26A69A',
           secondary700: '#00897B',
 
-          // Success
+          // Success - Green
           success100: '#E8F5E9',
+          success200: '#C8E6C9',
           success500: '#52C17A',
           success600: '#3D9E5F',
           success700: '#2E7D32',
 
-          // Danger
+          // Danger - Red
           danger100: '#FDEDEC',
+          danger200: '#F5B7B1',
           danger500: '#E74C3C',
           danger600: '#C0392B',
           danger700: '#922B21',
 
-          // Warning
+          // Warning - Orange
           warning100: '#FEF9E7',
+          warning200: '#F9E79F',
           warning500: '#F39C12',
           warning600: '#D68910',
           warning700: '#B9770E',
 
-          // Alternative
+          // Alternative - Green (same as primary)
           alternative100: '#E8F5E9',
           alternative200: '#C8E6C9',
           alternative500: '#52C17A',
@@ -68,53 +79,30 @@ export default {
           alternative700: '#2E7D32',
         },
       },
-      dark: {
-        colors: {
-          // Primary - Paricus Green (for dark mode)
-          primary100: '#1B3D2F',
-          primary200: '#2D5A45',
-          primary500: '#52C17A',
-          primary600: '#6AD492',
-          primary700: '#8DE4AB',
-
-          // Buttons
-          buttonPrimary500: '#52C17A',
-          buttonPrimary600: '#6AD492',
-
-          // Success
-          success100: '#1B3D2F',
-          success500: '#52C17A',
-          success600: '#6AD492',
-          success700: '#8DE4AB',
-
-          // Alternative
-          alternative100: '#1B3D2F',
-          alternative200: '#2D5A45',
-          alternative500: '#52C17A',
-          alternative600: '#6AD492',
-          alternative700: '#8DE4AB',
-        },
-      },
     },
     // Locales
     locales: ['en', 'es'],
-    // Custom translations
+    // Translations
     translations: {
       en: {
         'app.components.LeftMenu.navbrand.title': 'Paricus CMS',
         'app.components.LeftMenu.navbrand.workplace': 'Content Dashboard',
-        'Auth.form.welcome.title': 'Welcome to Paricus CMS',
+        'Auth.form.welcome.title': 'Welcome to Paricus',
         'Auth.form.welcome.subtitle': 'Manage your website content',
       },
       es: {
         'app.components.LeftMenu.navbrand.title': 'Paricus CMS',
         'app.components.LeftMenu.navbrand.workplace': 'Panel de Contenido',
-        'Auth.form.welcome.title': 'Bienvenido a Paricus CMS',
+        'Auth.form.welcome.title': 'Bienvenido a Paricus',
         'Auth.form.welcome.subtitle': 'Administra el contenido de tu sitio',
       },
     },
   },
   bootstrap(app: StrapiApp) {
-    console.log('Paricus CMS initialized');
+    // Force light mode on load
+    const currentTheme = localStorage.getItem('STRAPI_THEME');
+    if (currentTheme !== 'light') {
+      localStorage.setItem('STRAPI_THEME', 'light');
+    }
   },
 };
