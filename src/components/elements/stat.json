@@ -3,10 +3,14 @@
   "info": {
     "displayName": "Stat",
     "icon": "chartLine",
-    "description": "Statistics item with value and label"
+    "description": "Statistics item with icon, value and label"
   },
   "options": {},
   "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "users"
+    },
     "value": {
       "type": "string",
       "required": true

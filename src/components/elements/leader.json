@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_elements_leaders",
+  "info": {
+    "displayName": "Leader",
+    "icon": "user",
+    "description": "Leadership team member with photo"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
