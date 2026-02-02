@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_elements_result_metrics",
+  "info": {
+    "displayName": "Result Metric",
+    "icon": "chartPie",
+    "description": "Case study result metric with icon"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "trending-up",
+        "clock",
+        "users",
+        "dollar-sign",
+        "percent",
+        "check-circle",
+        "star",
+        "zap",
+        "target",
+        "award",
+        "bar-chart",
+        "pie-chart",
+        "activity",
+        "thumbs-up",
+        "heart",
+        "shield"
+      ],
+      "default": "trending-up",
+      "required": true
+    },
+    "metric": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
