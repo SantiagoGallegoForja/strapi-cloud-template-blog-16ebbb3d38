@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_elements_tech_items",
+  "info": {
+    "displayName": "Tech Item",
+    "icon": "code",
+    "description": "Technology stack item with icon"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "shield",
+        "zap",
+        "database",
+        "cloud",
+        "lock",
+        "server",
+        "cpu",
+        "globe",
+        "wifi",
+        "hard-drive",
+        "layers",
+        "git-branch",
+        "code",
+        "terminal",
+        "monitor",
+        "smartphone",
+        "settings",
+        "key",
+        "eye",
+        "activity"
+      ],
+      "default": "shield",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

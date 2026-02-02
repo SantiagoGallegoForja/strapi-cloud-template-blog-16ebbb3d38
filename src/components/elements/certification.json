@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_certifications",
+  "info": {
+    "displayName": "Certification",
+    "icon": "check",
+    "description": "Certification or compliance item"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
