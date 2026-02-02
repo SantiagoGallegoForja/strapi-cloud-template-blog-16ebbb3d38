@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "form_configs",
+  "info": {
+    "singularName": "form-config",
+    "pluralName": "form-configs",
+    "displayName": "Form Config",
+    "description": "Configuration for contact form dropdowns (industries and services)"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "industries": {
+      "type": "component",
+      "repeatable": true,
+      "component": "form.industry-option"
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "form.service-option"
+    }
+  }
+}

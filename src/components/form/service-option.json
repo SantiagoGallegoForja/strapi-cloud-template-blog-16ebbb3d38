@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_form_service_options",
+  "info": {
+    "displayName": "Service Option",
+    "description": "Service option for contact form dropdown"
+  },
+  "options": {},
+  "attributes": {
+    "name_en": {
+      "type": "string",
+      "required": true
+    },
+    "name_es": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

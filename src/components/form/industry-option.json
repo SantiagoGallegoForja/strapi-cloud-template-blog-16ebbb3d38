@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_form_industry_options",
+  "info": {
+    "displayName": "Industry Option",
+    "description": "Industry option for contact form dropdown"
+  },
+  "options": {},
+  "attributes": {
+    "name_en": {
+      "type": "string",
+      "required": true
+    },
+    "name_es": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "enabled": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
