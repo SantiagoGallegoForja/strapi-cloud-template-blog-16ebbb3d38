@@ -1,0 +1,56 @@
+{
+  "collectionName": "components_elements_industry_cards",
+  "info": {
+    "displayName": "Industry Card",
+    "icon": "grid",
+    "description": "Industry card with icon, title and description"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "heart",
+        "package",
+        "cpu",
+        "landmark",
+        "shopping-bag",
+        "plane",
+        "building",
+        "briefcase",
+        "truck",
+        "shield",
+        "globe",
+        "users",
+        "phone",
+        "mail",
+        "headphones",
+        "settings",
+        "database",
+        "cloud",
+        "lock",
+        "credit-card",
+        "bar-chart",
+        "pie-chart",
+        "trending-up",
+        "award",
+        "star",
+        "zap",
+        "target",
+        "layers",
+        "box",
+        "home"
+      ],
+      "default": "briefcase",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
