@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_business_hours",
+  "info": {
+    "displayName": "Business Hour",
+    "icon": "clock",
+    "description": "A business hour entry with day and hours"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "string",
+      "required": true
+    },
+    "hours": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
