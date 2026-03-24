@@ -1,11 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "homepages",
+  "collectionName": "careers_pages",
   "info": {
-    "singularName": "homepage",
-    "pluralName": "homepages",
-    "displayName": "Homepage",
-    "description": "Homepage content management"
+    "singularName": "careers-page",
+    "pluralName": "careers-pages",
+    "displayName": "Careers Page",
+    "description": "Careers page content management"
   },
   "options": {
     "draftAndPublish": true
@@ -16,17 +16,17 @@
     }
   },
   "attributes": {
-    "hero": {
+    "header": {
       "type": "component",
       "repeatable": false,
-      "component": "sections.hero",
+      "component": "sections.page-header",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "servicesLabel": {
+    "heroButtonPrimary": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -34,7 +34,7 @@
         }
       }
     },
-    "servicesHeading": {
+    "heroButtonSecondary": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -42,7 +42,7 @@
         }
       }
     },
-    "whyLabel": {
+    "benefitsLabel": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -50,7 +50,7 @@
         }
       }
     },
-    "whyHeading": {
+    "benefitsHeading": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -58,27 +58,17 @@
         }
       }
     },
-    "valuePoints": {
+    "benefits": {
       "type": "component",
       "repeatable": true,
-      "component": "elements.value-point",
+      "component": "elements.benefit-card",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "statsBanner": {
-      "type": "component",
-      "repeatable": true,
-      "component": "elements.stat",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "industriesLabel": {
+    "positionsLabel": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -86,18 +76,8 @@
         }
       }
     },
-    "industriesHeading": {
+    "positionsHeading": {
       "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "industriesPreview": {
-      "type": "component",
-      "repeatable": true,
-      "component": "elements.industry-card",
       "pluginOptions": {
         "i18n": {
           "localized": true

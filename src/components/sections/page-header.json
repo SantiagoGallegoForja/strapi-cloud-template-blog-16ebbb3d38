@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_page_headers",
+  "info": {
+    "displayName": "Page Header",
+    "icon": "heading",
+    "description": "Reusable page header block with label, heading and description"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

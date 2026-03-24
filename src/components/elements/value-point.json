@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_value_points",
+  "info": {
+    "displayName": "Value Point",
+    "icon": "star",
+    "description": "Value point with icon, number, title and description"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "star"
+    },
+    "num": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
