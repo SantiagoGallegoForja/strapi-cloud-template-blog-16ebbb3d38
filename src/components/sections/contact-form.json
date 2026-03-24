@@ -1,0 +1,65 @@
+{
+  "collectionName": "components_sections_contact_forms",
+  "info": {
+    "displayName": "Contact Form",
+    "icon": "pencil",
+    "description": "Contact form field labels and placeholders"
+  },
+  "options": {},
+  "attributes": {
+    "firstNameLabel": {
+      "type": "string"
+    },
+    "firstNamePlaceholder": {
+      "type": "string"
+    },
+    "lastNameLabel": {
+      "type": "string"
+    },
+    "lastNamePlaceholder": {
+      "type": "string"
+    },
+    "emailLabel": {
+      "type": "string"
+    },
+    "emailPlaceholder": {
+      "type": "string"
+    },
+    "phoneLabel": {
+      "type": "string"
+    },
+    "phonePlaceholder": {
+      "type": "string"
+    },
+    "companyLabel": {
+      "type": "string"
+    },
+    "companyPlaceholder": {
+      "type": "string"
+    },
+    "industryLabel": {
+      "type": "string"
+    },
+    "industryPlaceholder": {
+      "type": "string"
+    },
+    "serviceLabel": {
+      "type": "string"
+    },
+    "servicePlaceholder": {
+      "type": "string"
+    },
+    "messageLabel": {
+      "type": "string"
+    },
+    "messagePlaceholder": {
+      "type": "string"
+    },
+    "submitButtonText": {
+      "type": "string"
+    },
+    "privacyText": {
+      "type": "string"
+    }
+  }
+}

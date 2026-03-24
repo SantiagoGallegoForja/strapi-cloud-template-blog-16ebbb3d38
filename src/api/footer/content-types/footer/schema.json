@@ -1,11 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "industries_pages",
+  "collectionName": "footers",
   "info": {
-    "singularName": "industries-page",
-    "pluralName": "industries-pages",
-    "displayName": "Industries Page",
-    "description": "Industries page content management"
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": "Footer content — columns, links, legal text"
   },
   "options": {
     "draftAndPublish": true
@@ -16,14 +16,6 @@
     }
   },
   "attributes": {
-    "heading": {
-      "type": "string",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "description": {
       "type": "text",
       "pluginOptions": {
@@ -32,17 +24,17 @@
         }
       }
     },
-    "industries": {
+    "columns": {
       "type": "component",
       "repeatable": true,
-      "component": "elements.industry-card",
+      "component": "sections.footer-column",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
     },
-    "metaTitle": {
+    "copyrightText": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -50,15 +42,7 @@
         }
       }
     },
-    "metaDescription": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "ctaLabel": {
+    "privacyLabel": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -66,7 +50,7 @@
         }
       }
     },
-    "ctaHeading": {
+    "termsLabel": {
       "type": "string",
       "pluginOptions": {
         "i18n": {
@@ -74,15 +58,7 @@
         }
       }
     },
-    "ctaDescription": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "ctaButtonText": {
+    "securityLabel": {
       "type": "string",
       "pluginOptions": {
         "i18n": {

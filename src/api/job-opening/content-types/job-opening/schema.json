@@ -73,6 +73,14 @@
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "metaTitle": {
+      "type": "string",
+      "pluginOptions": { "i18n": { "localized": true } }
+    },
+    "metaDescription": {
+      "type": "text",
+      "pluginOptions": { "i18n": { "localized": true } }
     }
   }
 }
