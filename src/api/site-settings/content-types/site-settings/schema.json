@@ -2,8 +2,8 @@
   "kind": "singleType",
   "collectionName": "site_settings",
   "info": {
-    "singularName": "site-setting",
-    "pluralName": "site-settings",
+    "singularName": "site-settings",
+    "pluralName": "site-settings-list",
     "displayName": "Site Settings",
     "description": "Global site settings — name, contact, logos, social links"
   },
